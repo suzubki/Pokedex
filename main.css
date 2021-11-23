@@ -1,0 +1,89 @@
+body {
+  background-color: #0d1127;
+}
+
+nav {
+  background-color: #0d1127;
+}
+
+.space {
+  margin-bottom: 2rem;
+}
+
+.container-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#modal-content {
+  height: 100%;
+}
+
+.modal-content {
+  background-color: #a681c8;
+}
+
+#modal_nombrePokemon {
+  color: white;
+  font-weight: bold;
+}
+
+#div_search {
+  margin-bottom: 0;
+  position: relative;
+}
+
+#iconoBuscar,
+#iconoCerrar {
+  cursor: pointer;
+}
+
+.contenedor-resultados {
+  background-color: rgb(16, 15, 34);
+  position: absolute;
+  width: 100%;
+  top: calc(100% + 0.18rem);
+  left: 0;
+  z-index: 1000;
+}
+
+#searchInput:focus {
+  opacity: 1;
+}
+
+.pokemonEncontrado {
+  color: white;
+}
+
+#topbarsearch {
+  margin-bottom: 0;
+}
+
+.prefix {
+  top: 0 !important;
+}
+
+.type-content {
+  display: flex !important;
+}
+
+.img-modal {
+  max-width: 100%;
+}
+
+@media (max-width: 352px) {
+  .type-content a:nth-child(2) {
+    display: none !important;
+  }
+}
+
+@media (min-width: 600px) {
+  #div-content {
+    transform: translate(0, 8%);
+  }
+
+  #modal_leftContent {
+    transform: translate(0px, 50%);
+  }
+}

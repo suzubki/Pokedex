@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body class="lighten-1">
+    <!-- Header -->
+    <header>
+      <nav class="nav-extended">
+        <div class="nav-wrapper row">
+          <a class="col s12 m2 center-align"> Pokedex </a>
+          <ul class="col s12 m10 center-align" style="margin-bottom: 4px">
+            <li class="col s12 offset-m1 m4 offset-l2 l4 right-align">
+              <div class="center row" id="div_search">
+                <div
+                  class="input-field col s6 s12"
+                  data-dropdown-button="false"
+                >
+                  <i class="white-text material-icons prefix" id="iconoBuscar"
+                    >search</i
+                  >
+                  <i
+                    class="white-text material-icons prefix"
+                    style="display: none"
+                    id="iconoCerrar"
+                    >close</i
+                  >
+                  <input
+                    type="text"
+                    placeholder="Busca a tu pokemon favorito"
+                    class="white-text"
+                    style="margin-bottom: 0"
+                    id="searchInput"
+                    data-isactive="false"
+                  />
+                </div>
+                <div
+                  class="contenedor-resultados"
+                  id="contenedor_resultados"
+                ></div>
+              </div>
+            </li>
+
+            <li class="col s12 m7 l6 center-align">
+              <a
+                class="
+                  waves-effect waves-light
+                  btn-large
+                  modal-trigger
+                  light-blue
+                  darken-4
+                "
+                id="generarPokemonAleatorio"
+                href="#modal1"
+                >Genera un pokemon aleatorio</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Main content -->
+    <main>
+      <section id="section-content" class="row"></section>
+      <section class="center-align space">
+        <button class="btn btn-large" id="generarMasPokemones">
+          Seguir buscando<i class="tiny material-icons right">search</i>
+        </button>
+      </section>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content" id="modal-content">
+          <div class="row" id="div-content">
+            <div
+              class="col s12 m5 l4 center-align"
+              id="modal_leftContent"
+            ></div>
+            <div class="col s12 m7 l8" id="modal_rightContent">
+              <h4 class="center-align" id="modal_nombrePokemon"></h4>
+              <div class="row">
+                <h6 class="col s6 left-align" id="modal_pesoPokemon"></h6>
+                <h6 class="col s6 left-align" id="modal_alturaPokemon"></h6>
+              </div>
+              <div class="row" id="modal_habilidadesPokemon"></div>
+              <div class="row" id="modal_debilidadesPokemon"></div>
+              <div class="row" id="modal_tipoDePokemon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <!-- Compiled and minified JavaScript (Materialize.css) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Main.css -->
+  <script type="text/javascript" src="./main.js"></script>
+</html>
